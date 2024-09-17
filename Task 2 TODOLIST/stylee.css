@@ -1,0 +1,156 @@
+
+
+* {
+  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  margin: 0;
+  background-image: url(bg.jpg); /* Add your background image */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: rgb(0, 0, 0); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(184, 162, 162, 0.9); 
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.add-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #3e8e41;
+}
+
+.todos {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  opacity: 0.9; /* Add a slight transparency to the todo list */
+}
+
+.todo {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo:last-child {
+  border-bottom: none;
+}
+
+.todo label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.todo input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo span {
+  flex: 1;
+  word-break: break-word;
+}
+
+.todo button.delete-btn {
+  background-color: #c2adb8;
+  color: #c2adb8;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.todo button.delete-btn:hover {
+  background-color: #ff3737;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.filter:hover {
+  background-color: #f0f0f0;
+}
+
+.filter.active {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.delete-all {
+  background-color: #91657b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.delete-all:hover {
+  background-color: #ff3737;
+}
